@@ -1,0 +1,70 @@
+# Project: AI Multiple Face Detection & Visual Tracking System
+
+I want to build a real-time AI Face Detection and Tracking System using Python and my PC Webcam.
+
+## 1. Main Objective
+Create a system that detects multiple human faces through a live webcam and allows me to manually select any detected face using the mouse.
+
+## 2. Core Features
+- Real-time webcam input.
+- Detect multiple faces simultaneously.
+- Assign a unique tracking ID to each detected face.
+- Allow manual face selection using mouse clicks.
+- Track the selected face continuously.
+- Display FACE LOCKED status when the selected face is visible.
+- Display FACE LOST when the selected face disappears.
+- Allow selecting another face at any time.
+- Press C to clear the current selection.
+- Press Q to close the application.
+
+## 3. Special UI Design (Very Important)
+
+I DO NOT want rectangular bounding boxes around faces.
+
+Instead, I want a futuristic Archery Target / Crosshair-style visual marker.
+
+Design requirements:
+- Display a small circular target marker near the center of the forehead.
+- Use a crosshair design with an outer circle, inner circle and four small directional lines.
+- Selected face: Green target marker.
+- Other detected faces: Orange target markers.
+- The target marker must follow the selected face in real time.
+- Do not draw any large rectangle around the face.
+- Keep the interface clean, modern and futuristic.
+
+## 4. Interface Design
+Display:
+- Live webcam feed.
+- Face tracking IDs.
+- FACE LOCKED / FACE LOST status.
+- Number of detected faces.
+- FPS counter.
+- Selected face indicator.
+
+## 5. Technologies
+- Python
+- OpenCV
+- MediaPipe or another suitable face detection library.
+- NumPy.
+
+## 6. Important Requirements
+- Provide complete working Python code.
+- Use separate functions for detection, tracking, mouse selection and drawing UI.
+- Avoid unnecessary libraries.
+- Handle webcam errors properly.
+- Explain installation and execution step by step.
+- Make the code beginner-friendly.
+- Ensure the selected face is tracked using temporary visual tracking IDs, not identity recognition.
+- If tracking IDs change or become unreliable, explain the limitation and improve the tracking method.
+
+## 7. Expected Result
+When I run the Python program:
+1. The webcam opens.
+2. All visible faces are detected.
+3. Every face gets a small orange crosshair marker.
+4. When I click a face, its marker turns green.
+5. The green marker follows that face as it moves.
+6. If the face disappears, the system displays FACE LOST.
+7. I can select another face whenever I want.
+
+Please build this project step by step and provide the complete corrected code. Do not skip any important implementation details.
